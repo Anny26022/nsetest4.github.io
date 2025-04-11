@@ -217,7 +217,7 @@ export function EmaScanner() {
     }
 
     setIsScanning(false);
-  }, [getSymbolsToScan, isScanning, scanResults]);
+  }, [getSymbolsToScan, isScanning, scanResults, getCachedResult]);
 
   // Scan an individual stock
   const scanStock = async (symbol: string, companyName: string) => {

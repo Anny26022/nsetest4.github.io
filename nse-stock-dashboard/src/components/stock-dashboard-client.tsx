@@ -118,7 +118,7 @@ export function StockDashboardClient() {
     };
 
     fetchStockDetails();
-  }, [displayedSymbols, collectSector]); // Removed stockDetails from dependency array
+  }, [displayedSymbols, collectSector, stockDetails]); // Added stockDetails to dependency array
 
   // Handle search
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {

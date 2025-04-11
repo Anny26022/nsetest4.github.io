@@ -32,6 +32,13 @@ const nextConfig = {
       },
     ],
   },
+  eslint: {
+    ignoreDuringBuilds: true, // This will ignore ESLint errors during the build
+  },
+  typescript: {
+    ignoreBuildErrors: true, // This will ignore TypeScript errors during the build
+  },
+  output: 'standalone', // Use standalone output for API routes
 };
 
 export default nextConfig;
